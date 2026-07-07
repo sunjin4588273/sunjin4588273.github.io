@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Personal academic homepage" />
-  <meta name="author" content="sunjin4588273" />
-  <title>Personal Homepage</title>
+  <meta name="description" content="Jin Sun personal academic homepage" />
+  <meta name="author" content="Jin Sun" />
+  <title>Jin Sun | Personal Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:wght@600;700&display=swap" rel="stylesheet" />
@@ -22,7 +22,6 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -116,9 +115,17 @@
       max-width: 780px;
       margin: 0;
       font-family: Newsreader, Georgia, serif;
-      font-size: clamp(3rem, 7vw, 6.5rem);
+      font-size: clamp(3.4rem, 8vw, 7rem);
       line-height: 0.96;
       letter-spacing: 0;
+    }
+
+    .hero-subtitle {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: rgba(255,255,255,0.86);
+      font-size: clamp(1rem, 2vw, 1.18rem);
+      font-weight: 500;
     }
 
     .profile-wrap {
@@ -141,10 +148,7 @@
       background: #e7edf5;
     }
 
-    .profile-card {
-      flex: 1;
-      padding: 20px 0 8px;
-    }
+    .profile-card { flex: 1; padding: 20px 0 8px; }
 
     .profile-card h2 {
       margin: 0 0 6px;
@@ -153,15 +157,33 @@
       letter-spacing: 0;
     }
 
-    .profile-card p { margin: 0; color: var(--muted); max-width: 760px; }
+    .profile-card p { margin: 0; color: var(--muted); max-width: 820px; }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .quick-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 13px;
+      border: 1px solid #cfd8e6;
+      border-radius: 999px;
+      color: #263143;
+      background: #fff;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .quick-link:hover { border-color: var(--accent); }
 
     main { margin-top: 46px; }
 
-    .section {
-      border-top: 1px solid var(--line);
-      padding: 64px 0;
-    }
-
+    .section { border-top: 1px solid var(--line); padding: 64px 0; }
     .section:nth-child(even) { background: var(--soft); }
 
     .section-inner {
@@ -173,10 +195,7 @@
       align-items: start;
     }
 
-    .section-title {
-      position: sticky;
-      top: calc(var(--nav-height) + 24px);
-    }
+    .section-title { position: sticky; top: calc(var(--nav-height) + 24px); }
 
     .section-title h2 {
       margin: 0;
@@ -192,10 +211,7 @@
       font-size: 0.92rem;
     }
 
-    .content-list {
-      display: grid;
-      gap: 24px;
-    }
+    .content-list { display: grid; gap: 24px; }
 
     .item {
       padding-bottom: 24px;
@@ -215,10 +231,24 @@
       margin: 0 0 10px;
       color: var(--muted);
       font-size: 0.94rem;
-      font-weight: 600;
+      font-weight: 650;
     }
 
     .item p { margin: 0; color: #334155; }
+
+    .school-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .school-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
 
     .chips {
       display: flex;
@@ -274,12 +304,12 @@
 <body>
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a class="brand" href="#top">Homepage</a>
+      <a class="brand" href="#top">Jin Sun</a>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#news">News</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -287,16 +317,21 @@
 
   <header class="hero" id="top">
     <div class="hero-inner">
-      <p class="hero-kicker">Academic Homepage</p>
-      <h1>Personal Research Portfolio</h1>
+      <p class="hero-kicker">Personal Academic Homepage</p>
+      <h1>Jin Sun</h1>
+      <p class="hero-subtitle">Graduate student at Shandong Normal University. Research interests include incomplete multi-view clustering.</p>
     </div>
   </header>
 
   <div class="profile-wrap">
-    <img class="avatar" src="https://avatars.githubusercontent.com/u/234874863?v=4" alt="Profile photo" />
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/234874863?v=4" alt="Jin Sun profile photo" />
     <div class="profile-card">
-      <h2>Your Name</h2>
-      <p>Short personal introduction placeholder. Add your affiliation, research direction, current position, and a concise summary of your work here.</p>
+      <h2>Jin Sun</h2>
+      <p>Male. I am currently studying at the School of Computer Science and Artificial Intelligence, Shandong Normal University. My current research focuses on incomplete multi-view clustering.</p>
+      <div class="quick-links">
+        <a class="quick-link" href="https://github.com/sunjin4588273">GitHub: sunjin4588273</a>
+        <a class="quick-link" href="mailto:2025217030@stu.sdnu.edu.cn">2025217030@stu.sdnu.edu.cn</a>
+      </div>
     </div>
   </div>
 
@@ -305,38 +340,59 @@
       <div class="section-inner">
         <div class="section-title">
           <h2>About</h2>
-          <span>Brief bio and research interests.</span>
+          <span>Basic profile and research direction.</span>
         </div>
         <div class="content-list">
           <article class="item">
-            <h3>Biography Placeholder</h3>
-            <p>This area is reserved for your academic profile. You can later add education background, research interests, advisor information, and current work.</p>
+            <h3>Biography</h3>
+            <p>I am Jin Sun, a graduate student at Shandong Normal University. My research direction is incomplete multi-view clustering, with interest in representation learning, missing-view modeling, and clustering-oriented learning methods.</p>
             <div class="chips">
-              <span class="chip">Research Area</span>
+              <span class="chip">Incomplete Multi-view Clustering</span>
+              <span class="chip">Representation Learning</span>
               <span class="chip">Machine Learning</span>
-              <span class="chip">Data Mining</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="news">
+    <section class="section" id="education">
       <div class="section-inner">
         <div class="section-title">
-          <h2>News</h2>
-          <span>Recent updates and milestones.</span>
+          <h2>Education</h2>
+          <span>Academic background.</span>
         </div>
         <div class="content-list">
           <article class="item">
-            <p class="meta">2026</p>
-            <h3>Homepage scaffold launched</h3>
-            <p>Use this section for paper acceptance, awards, project releases, talks, and other updates.</p>
+            <div class="school-line">
+              <img class="school-logo" src="https://upload.wikimedia.org/wikipedia/zh/0/06/Shandong_Normal_University_seal.svg" alt="Shandong Normal University logo" />
+              <h3>山东师范大学计算机与人工智能学院</h3>
+            </div>
+            <p class="meta">2025.9 至今</p>
+            <p>研究生阶段学习与科研，目前研究方向为多视图缺失聚类。</p>
           </article>
           <article class="item">
-            <p class="meta">2026</p>
-            <h3>New research update placeholder</h3>
-            <p>Replace this entry with your own content when the detailed materials are ready.</p>
+            <div class="school-line">
+              <img class="school-logo" src="https://upload.wikimedia.org/wikipedia/zh/0/06/Shandong_Normal_University_seal.svg" alt="Shandong Normal University logo" />
+              <h3>山东师范大学信息科学与工程学院</h3>
+            </div>
+            <p class="meta">2020.9 至 2024.6</p>
+            <p>本科就读于信息科学与工程学院，该学院现为计算机与人工智能学院。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-inner">
+        <div class="section-title">
+          <h2>Research</h2>
+          <span>Current research interests.</span>
+        </div>
+        <div class="content-list">
+          <article class="item">
+            <h3>Incomplete Multi-view Clustering</h3>
+            <p>My current work focuses on clustering with incomplete multi-view data, including robust multi-view representation, missing-view information recovery, and clustering structure learning.</p>
           </article>
         </div>
       </div>
@@ -346,18 +402,12 @@
       <div class="section-inner">
         <div class="section-title">
           <h2>Publications</h2>
-          <span>Selected papers and preprints.</span>
+          <span>Papers and preprints.</span>
         </div>
         <div class="content-list">
           <article class="item">
-            <h3>Publication Title Placeholder</h3>
-            <p class="meta">Authors. Venue or Journal, Year.</p>
-            <p>Add abstract notes, paper links, code links, citation links, or badges here.</p>
-          </article>
-          <article class="item">
-            <h3>Another Publication Placeholder</h3>
-            <p class="meta">Authors. Conference, Year.</p>
-            <p>This layout is designed to be expanded into a publication list later.</p>
+            <h3>Coming Soon</h3>
+            <p>No publications yet. This section will be updated when papers or preprints become available.</p>
           </article>
         </div>
       </div>
@@ -367,17 +417,27 @@
       <div class="section-inner">
         <div class="section-title">
           <h2>Projects</h2>
-          <span>Research systems, demos, and code.</span>
+          <span>Research code and demos.</span>
         </div>
         <div class="content-list">
           <article class="item">
-            <h3>Project Placeholder</h3>
-            <p>Describe a project, dataset, codebase, or demo. Add GitHub, documentation, and demo links as needed.</p>
-            <div class="chips">
-              <span class="chip">GitHub</span>
-              <span class="chip">Demo</span>
-              <span class="chip">Dataset</span>
-            </div>
+            <h3>Coming Soon</h3>
+            <p>No public projects yet. Future research code, datasets, or demos can be listed here.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-inner">
+        <div class="section-title">
+          <h2>News</h2>
+          <span>Updates and milestones.</span>
+        </div>
+        <div class="content-list">
+          <article class="item">
+            <h3>No News Yet</h3>
+            <p>This section will be updated when there are new academic updates, publications, awards, or project releases.</p>
           </article>
         </div>
       </div>
@@ -387,12 +447,12 @@
       <div class="section-inner">
         <div class="section-title">
           <h2>Contact</h2>
-          <span>Email, GitHub, Scholar, and links.</span>
+          <span>Email and online profile.</span>
         </div>
         <div class="content-list">
           <article class="item">
-            <h3>Contact Placeholder</h3>
-            <p>Email: your.email@example.com<br />GitHub: <a href="https://github.com/sunjin4588273">sunjin4588273</a></p>
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:2025217030@stu.sdnu.edu.cn">2025217030@stu.sdnu.edu.cn</a><br />GitHub: <a href="https://github.com/sunjin4588273">https://github.com/sunjin4588273</a></p>
           </article>
         </div>
       </div>
@@ -400,7 +460,7 @@
   </main>
 
   <footer class="footer">
-    <div>Copyright &copy; 2026 sunjin4588273. Powered by GitHub Pages.</div>
+    <div>Copyright &copy; 2026 Jin Sun. Powered by GitHub Pages.</div>
     <div><a href="https://github.com/sunjin4588273/sunjin4588273.github.io">Source</a></div>
   </footer>
 </body>
